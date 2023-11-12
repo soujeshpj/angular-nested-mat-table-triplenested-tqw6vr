@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { Comment } from './comment.model';
+import { Address } from './address.model';
+import { User } from './user.model';
 
 @Injectable({
   providedIn: 'root',
