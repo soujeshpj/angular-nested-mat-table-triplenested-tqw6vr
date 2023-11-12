@@ -1,6 +1,9 @@
+import { Validation } from './validation.model';
+import { MatTableDataSource } from '@angular/material/table';
+
 export interface Comment {
-    commenID: number;
-    comment: string;
-    commentStatus: string;
-  }
-  
+  commentID: number;
+  comment: string;
+  commentStatus: string;
+  validations?: Validation[];
+}

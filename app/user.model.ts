@@ -5,7 +5,7 @@ export interface User {
     name: string;
     email: string;
     phone: string;
-    addresses?: Address[] | MatTableDataSource<Address>;
+    addresses?: Address[];
   }
   
   export const USERS: User[] = [
