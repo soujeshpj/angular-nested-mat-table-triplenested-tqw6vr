@@ -1,8 +1,11 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { Comment } from './comment.model';
 import { Address } from './address.model';
-import { User } from './user.model';
+import { Comment } from './comment.model';
+import { USERS } from './user.mock';
+
+// Import your mock user data here...
+// Import your mock address data here...
 
 @Injectable({
   providedIn: 'root',
@@ -14,9 +17,6 @@ export class CommentMockService {
     return of(address ? address.comments : []);
   }
 }
-
-// Import your mock user data here...
-// Import your mock address data here...
 
 function findAddressByStreet(street: string): Address | undefined {
   for (const user of USERS) {
